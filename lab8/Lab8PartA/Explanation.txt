@@ -1,0 +1,8 @@
+The Hibernate Session is closed as soon as the entity is fetched when the @Transaction
+is not used. Hibernate is unable to fetch them because the Session is no longer available.
+This results in a LazyInitializationException.
+
+ Using transaction ensures that the entity and all its associated entities are fetched
+ within the context of a single Hibernate Session, which remains open until the end of the
+ transaction. This allows Hibernate to fetch the associated entities when needed and prevents
+ the LazyInitializationException.

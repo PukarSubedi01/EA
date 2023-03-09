@@ -1,0 +1,7 @@
+Benefit of transaction demarcation in the class level:
+
+After adding @Transactional annotation to the AccountService class all the
+methods of the class will be accumulated in a single transaction.
+Due to this, eager fetch of the account entries from account can be replaced with lazy fetch.
+And, while fetching the account and the account entries, both of them will be done in a single
+transaction which will ultimately fetch the account and associated account entries collectively.
