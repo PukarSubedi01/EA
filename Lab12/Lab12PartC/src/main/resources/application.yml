@@ -1,0 +1,15 @@
+application:
+  user:
+    firstname: Pukar
+    password: '12345678'
+    lastname: Subedi
+    username: pukars
+  version: '4.5'
+  serverName: tomcat
+  serverUrl: localhost:8080
+  countries:
+    - Nepal
+    - USA
+    - India
+    - China
+  name: configuration

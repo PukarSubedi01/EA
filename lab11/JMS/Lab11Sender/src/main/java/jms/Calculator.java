@@ -1,0 +1,31 @@
+package jms;
+
+public class Calculator {
+    private Integer number;
+    private Character operator;
+
+    public Calculator(Integer number, Character operator) {
+        this.number = number;
+        this.operator = operator;
+    }
+
+    public Calculator(){}
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public char getOperator() {
+        return operator;
+    }
+
+    public void setOperator(char operator) {
+        this.operator = operator;
+    }
+
+
+}

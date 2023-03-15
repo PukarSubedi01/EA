@@ -1,0 +1,298 @@
+2023-03-15 15:19:05.969  INFO 14680 --- [main] bank.Application                         : Starting Application using Java 11 on CS544-202303-33 with PID 14680 (C:\Users\615433\Desktop\lab13\Lab13PartA\target\classes started by 615433 in C:\Users\615433\Desktop\lab13\Lab13PartA)
+2023-03-15 15:19:05.975  INFO 14680 --- [main] bank.Application                         : No active profile set, falling back to 1 default profile: "default"
+2023-03-15 15:19:07.123  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 15:19:07.187  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2023-03-15 15:19:07.929  INFO 14680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 15:19:07.941  INFO 14680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 15:19:07.941  INFO 14680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-15 15:19:08.095  INFO 14680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 15:19:08.096  INFO 14680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2031 ms
+2023-03-15 15:19:08.471  INFO 14680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 15:19:08.547  INFO 14680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-15 15:19:08.767  INFO 14680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 15:19:08.912  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 15:19:08.918  WARN 14680 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 15:19:09.090  INFO 14680 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 15:19:09.103  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 15:19:09.121  INFO 14680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 15:19:09.956  INFO 14680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 15:19:09.966  INFO 14680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:19:10.487  WARN 14680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:19:11.434  INFO 14680 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-03-15 15:19:11.589  INFO 14680 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-gid-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = gid
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-03-15 15:19:11.732  INFO 14680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.1
+2023-03-15 15:19:11.732  INFO 14680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8e30984f43e64d8b
+2023-03-15 15:19:11.732  INFO 14680 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1678911551729
+2023-03-15 15:19:11.759  INFO 14680 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-gid-1, groupId=gid] Subscribed to topic(s): accountTopic
+2023-03-15 15:19:11.785  INFO 14680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 15:19:11.806  INFO 14680 --- [main] bank.Application                         : Started Application in 6.404 seconds (JVM running for 7.351)
+2023-03-15 15:19:11.987  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:19:11.992  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 182 ms
+2023-03-15 15:19:11.992  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:19:12.276  INFO 14680 --- [RMI TCP Connection(1)-10.10.61.198] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 15:19:12.276  INFO 14680 --- [RMI TCP Connection(1)-10.10.61.198] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 15:19:12.278  INFO 14680 --- [RMI TCP Connection(1)-10.10.61.198] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 15:19:12.309  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-gid-1, groupId=gid] Cluster ID: xquNBfWlT9uofwqSHmenUQ
+2023-03-15 15:19:12.312  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Discovered group coordinator CS544-202303-33.cs.mum.edu:9092 (id: 2147483647 rack: null)
+2023-03-15 15:19:12.316  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] (Re-)joining group
+2023-03-15 15:19:14.650  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Successfully joined group with generation Generation{generationId=96, memberId='consumer-gid-1-0dc619b2-cd12-49f3-824c-5d0aefafcc8d', protocol='range'}
+2023-03-15 15:19:14.857  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Successfully synced group in generation Generation{generationId=96, memberId='consumer-gid-1-0dc619b2-cd12-49f3-824c-5d0aefafcc8d', protocol='range'}
+2023-03-15 15:19:14.860  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Notifying assignor about the new Assignment(partitions=[accountTopic-0])
+2023-03-15 15:19:14.863  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Adding newly assigned partitions: accountTopic-0
+2023-03-15 15:19:14.874  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Setting offset for partition accountTopic-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[CS544-202303-33.cs.mum.edu:9092 (id: 0 rack: null)], epoch=absent}}
+2023-03-15 15:19:14.875  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: partitions assigned: [accountTopic-0]
+2023-03-15 15:19:31.822  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:19:31.823  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 4 ms
+2023-03-15 15:19:31.823  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:19:51.810  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:19:51.811  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 5 ms
+2023-03-15 15:19:51.811  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:20:11.811  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:20:11.812  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 5 ms
+2023-03-15 15:20:11.812  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:20:31.820  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:20:31.820  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 5 ms
+2023-03-15 15:20:31.820  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:20:51.822  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:20:51.822  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 4 ms
+2023-03-15 15:20:51.822  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:21:11.827  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:21:11.827  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 5 ms
+2023-03-15 15:21:11.827  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:21:31.826  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:21:31.827  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 10 ms
+2023-03-15 15:21:31.827  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:21:51.817  INFO 14680 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:21:51.818  INFO 14680 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 5 ms
+2023-03-15 15:21:51.818  INFO 14680 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:21:58.929  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Revoke previously assigned partitions accountTopic-0
+2023-03-15 15:21:58.930  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: partitions revoked: [accountTopic-0]
+2023-03-15 15:21:58.930  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Member consumer-gid-1-0dc619b2-cd12-49f3-824c-5d0aefafcc8d sending LeaveGroup request to coordinator CS544-202303-33.cs.mum.edu:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-03-15 15:21:58.933  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Resetting generation due to: consumer pro-actively leaving the group
+2023-03-15 15:21:58.933  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Request joining group due to: consumer pro-actively leaving the group
+2023-03-15 15:21:58.933  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-gid-1, groupId=gid] Unsubscribed all topics or patterns and assigned partitions
+2023-03-15 15:21:58.934  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Resetting generation due to: consumer pro-actively leaving the group
+2023-03-15 15:21:58.934  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Request joining group due to: consumer pro-actively leaving the group
+2023-03-15 15:21:58.937  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-03-15 15:21:58.938  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-15 15:21:58.938  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-03-15 15:21:58.943  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-gid-1 unregistered
+2023-03-15 15:21:58.943  INFO 14680 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: Consumer stopped
+2023-03-15 15:21:58.963  INFO 14680 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:21:58.965  INFO 14680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 15:21:58.996  INFO 14680 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-15 15:22:04.014  INFO 15960 --- [main] bank.Application                         : Starting Application using Java 11 on CS544-202303-33 with PID 15960 (C:\Users\615433\Desktop\lab13\Lab13PartA\target\classes started by 615433 in C:\Users\615433\Desktop\lab13\Lab13PartA)
+2023-03-15 15:22:04.017  INFO 15960 --- [main] bank.Application                         : No active profile set, falling back to 1 default profile: "default"
+2023-03-15 15:22:05.491  INFO 15960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-15 15:22:05.561  INFO 15960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-03-15 15:22:06.383  INFO 15960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-03-15 15:22:06.398  INFO 15960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-15 15:22:06.399  INFO 15960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-03-15 15:22:06.558  INFO 15960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-15 15:22:06.559  INFO 15960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2492 ms
+2023-03-15 15:22:06.923  INFO 15960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-15 15:22:07.003  INFO 15960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-03-15 15:22:07.209  INFO 15960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-15 15:22:07.329  INFO 15960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-15 15:22:07.332  WARN 15960 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2023-03-15 15:22:07.502  INFO 15960 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2023-03-15 15:22:07.513  INFO 15960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-15 15:22:07.529  INFO 15960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2023-03-15 15:22:08.378  INFO 15960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-15 15:22:08.387  INFO 15960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:22:08.951  WARN 15960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:22:09.889  INFO 15960 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-15 15:22:10.023  INFO 15960 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-gid-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = gid
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2023-03-15 15:22:10.140  INFO 15960 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.1
+2023-03-15 15:22:10.141  INFO 15960 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8e30984f43e64d8b
+2023-03-15 15:22:10.141  INFO 15960 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1678911730138
+2023-03-15 15:22:10.161  INFO 15960 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-gid-1, groupId=gid] Subscribed to topic(s): accountTopic
+2023-03-15 15:22:10.184  INFO 15960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-15 15:22:10.203  INFO 15960 --- [main] bank.Application                         : Started Application in 6.686 seconds (JVM running for 7.951)
+2023-03-15 15:22:10.381  INFO 15960 --- [scheduling-1] bank.logging.Logger                      : Bank application: Call was made to:findAll on class com.sun.proxy.$Proxy131
+2023-03-15 15:22:10.387  INFO 15960 --- [scheduling-1] bank.aop.ServiceTimerAdvice              : Time to execute getAllAccounts = 180 ms
+2023-03-15 15:22:10.388  INFO 15960 --- [scheduling-1] b.s.scheduling.BankStatementPrinter      : []
+2023-03-15 15:22:10.466  INFO 15960 --- [RMI TCP Connection(3)-10.10.61.198] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 15:22:10.466  INFO 15960 --- [RMI TCP Connection(3)-10.10.61.198] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-15 15:22:10.468  INFO 15960 --- [RMI TCP Connection(3)-10.10.61.198] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-15 15:22:10.712  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-gid-1, groupId=gid] Cluster ID: xquNBfWlT9uofwqSHmenUQ
+2023-03-15 15:22:10.714  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Discovered group coordinator CS544-202303-33.cs.mum.edu:9092 (id: 2147483647 rack: null)
+2023-03-15 15:22:10.717  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] (Re-)joining group
+2023-03-15 15:22:12.153  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Successfully joined group with generation Generation{generationId=98, memberId='consumer-gid-1-af177b31-77af-4d79-b8ab-1c8dda1b8e9e', protocol='range'}
+2023-03-15 15:22:12.420  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Successfully synced group in generation Generation{generationId=98, memberId='consumer-gid-1-af177b31-77af-4d79-b8ab-1c8dda1b8e9e', protocol='range'}
+2023-03-15 15:22:12.423  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Notifying assignor about the new Assignment(partitions=[accountTopic-0])
+2023-03-15 15:22:12.427  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Adding newly assigned partitions: accountTopic-0
+2023-03-15 15:22:12.441  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Setting offset for partition accountTopic-0 to the committed offset FetchPosition{offset=18, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[CS544-202303-33.cs.mum.edu:9092 (id: 0 rack: null)], epoch=absent}}
+2023-03-15 15:22:12.443  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: partitions assigned: [accountTopic-0]
+2023-03-15 15:22:19.264  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Revoke previously assigned partitions accountTopic-0
+2023-03-15 15:22:19.265  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: partitions revoked: [accountTopic-0]
+2023-03-15 15:22:19.265  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Member consumer-gid-1-af177b31-77af-4d79-b8ab-1c8dda1b8e9e sending LeaveGroup request to coordinator CS544-202303-33.cs.mum.edu:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-03-15 15:22:19.267  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Resetting generation due to: consumer pro-actively leaving the group
+2023-03-15 15:22:19.267  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Request joining group due to: consumer pro-actively leaving the group
+2023-03-15 15:22:19.268  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-gid-1, groupId=gid] Unsubscribed all topics or patterns and assigned partitions
+2023-03-15 15:22:19.269  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Resetting generation due to: consumer pro-actively leaving the group
+2023-03-15 15:22:19.269  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-gid-1, groupId=gid] Request joining group due to: consumer pro-actively leaving the group
+2023-03-15 15:22:19.280  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-03-15 15:22:19.280  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-15 15:22:19.280  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-03-15 15:22:19.285  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-gid-1 unregistered
+2023-03-15 15:22:19.286  INFO 15960 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : gid: Consumer stopped
+2023-03-15 15:22:19.307  INFO 15960 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-15 15:22:19.309  INFO 15960 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-15 15:22:19.317  INFO 15960 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
